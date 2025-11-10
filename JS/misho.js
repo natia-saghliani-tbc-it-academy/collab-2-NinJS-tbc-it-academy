@@ -21,19 +21,21 @@ function playersAdd() {
       isChosenByDoctor: false,
     });
 
-    let playersNewUser = document.createElement('div')
-
-    // let playersNewUserHtml =  playersNewUser.innerHTML = `<div> ${playerUserName} </div>`
     let playersNewUsersDisplay = document.querySelector('.players-section-users-display');
 
-    // console.log("playersNewUser: ", playersNewUser)
+    const playersNewUser = document.createElement('div')
+     playersNewUser.innerHTML = `
+     <div> ${playerUserName} </div>
+     `
+    // playerUserName.appendChild()
+    
     playersNewUsersDisplay.appendChild(playersNewUser);
 
     playersGameStart() 
     // clearInput()
     console.log(mafiaPlayers)
   }
-}
+
 
 function playersClearAll()  {
     mafiaPlayers = [];
@@ -51,6 +53,7 @@ function playersGameStart() {
     }
 }
 
+
 // players-section-start-game-btn
 
 // function clearInput() {
@@ -59,34 +62,3 @@ function playersGameStart() {
 
 // getElementById("myText").value = "Johnny Bravo";
 
-/*  
-
-const textareaElement = document.querySelector('#user-textarea');
-const charCountElement = document.querySelector('.char-count');
-const submitBtnElement = document.querySelector('.submit-btn');
-
-textareaElement.addEventListener('input', () => {
-    let textLength = textareaElement.value.length
-
-    charCountElement.textContent = `${textLength}/100`
-
-    if(textLength > 100) {
-        textareaElement.classList.add('exceeded');
-        charCountElement.classList.add('exceeded');
-        submitBtnElement.disabled = true;
-    } else {
-        textareaElement.classList.remove('exceeded');
-        charCountElement.classList.remove('exceeded');
-        submitBtnElement.disabled = false;
-    }
-});
-
-
-function submitText() {
-    textareaElement.value = '';
-    charCountElement.textContent = '0/100';
-    textareaElement.classList.remove('exceeded');
-    charCountElement.classList.remove('exceeded');
-}
-
-*/
