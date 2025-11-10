@@ -75,10 +75,4 @@ main .container .container-body .container-context .btn-container #nextBtn {
   padding: 8px 12px;
   border-radius: 8px;
   min-width: 100px;
-}
-
-#players-section > .players-start-button-enabled {
-  color: green;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
