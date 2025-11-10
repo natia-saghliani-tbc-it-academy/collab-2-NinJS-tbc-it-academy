@@ -1,6 +1,84 @@
-.container {
-  background-color: red;
-  
+main {
+  min-height: 100vh;
+  background-color: rgb(25, 25, 49);
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 1200px;
+  margin: auto;
+}
+main .container .container-heading {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(59, 59, 110);
+  border: 1px solid blue;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+main .container .container-heading .container-heading-title {
+  display: flex;
+  gap: 10px;
+}
+main .container .container-heading .container-heading-title .mafia-image {
+  width: 20px;
+}
+main .container .container-body {
+  display: flex;
+  gap: 10px;
+  height: 80vh;
+}
+main .container .container-body .container-aside {
+  padding: 10px;
+  background-color: rgb(59, 59, 110);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .container .container-body .container-context {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .container .container-body .container-context .card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .container .container-body .container-context .card .card-heading {
+  display: flex;
+  gap: 10px;
+}
+main .container .container-body .container-context .card .card-heading #role {
+  color: red;
+}
+main .container .container-body .container-context .card #hideBtn {
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+main .container .container-body .container-context .btn-container {
+  display: flex;
+  gap: 20px;
+}
+main .container .container-body .container-context .btn-container #prevBtn {
+  background-color: white;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+main .container .container-body .container-context .btn-container #nextBtn {
+  background-color: white;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 8px;
+  min-width: 100px;
+}
+
+#players-section > .players-start-button-enabled {
+  color: green;
 }
 
 /*# sourceMappingURL=main.css.map */

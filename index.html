@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NinJS Project</title>
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body>
+
     <main>
       <div class="container">
         <div class="container-heading">
@@ -27,7 +27,30 @@
         <div class="container-body">
           <div class="container-aside">
             <div class="container-aside-players">
-              <!-- <p>აქ არის მიშოს ნაწილი</p> -->
+              <section id="players-section">
+        <div class="players-section-input-flex">
+          <h2>Players</h2>
+          <input
+            type="text"
+            name="users-input"
+            id="players-input"
+            placeholder="add player name..."
+          />
+          <button class="players-section-add" onclick="playersAdd()" >Add</button>
+        </div>
+        <div class="players-section-users-display"></div>
+        <button class="players-section-clear" onclick="playersClearAll()">clear</button>
+
+        <div>
+           <h2>Setup</h2>
+           <div class="players-section-setup-flex">
+            <div>Detective: 1</div>
+            <div>Doctor: 1</div>
+            <div>Mafia: 1</div>
+           </div>
+           <button class="players-section-start-game-btn" >Start Game</button>
+        </div>
+      </section>
             </div>
             <div class="container-aside-setup">
               <p>Setup</p>
