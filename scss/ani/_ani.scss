@@ -1,0 +1,80 @@
+main {
+  min-height: 100vh;
+  background-color: rgb(25, 25, 49);
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+
+    .container-heading {
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(59, 59, 110);
+      border: 1px solid blue;
+      padding: 8px 12px;
+      border-radius: 8px;
+
+      .container-heading-title {
+        display: flex;
+        gap: 10px;
+        .mafia-image {
+          width: 20px;
+        }
+      }
+    }
+    .container-body {
+      display: flex;
+      gap: 10px;
+      height: 80vh;
+      .container-aside {
+        padding: 10px;
+        background-color: rgb(59, 59, 110);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .container-context {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .card {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .card-heading {
+            display: flex;
+            gap: 10px;
+            #role {
+              color: red;
+            }
+          }
+          #hideBtn {
+            background-color: aliceblue;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+          }
+        }
+        .btn-container {
+          display: flex;
+          gap: 20px;
+          #prevBtn {
+            background-color: white;
+            color: black;
+            padding: 8px 12px;
+            border-radius: 8px;
+          }
+          #nextBtn {
+            background-color: white;
+            color: black;
+            padding: 8px 12px;
+            border-radius: 8px;
+            min-width: 100px;
+          }
+        }
+      }
+    }
+  }
+}

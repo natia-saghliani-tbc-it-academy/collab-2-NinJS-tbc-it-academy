@@ -71,7 +71,7 @@ hideBtn.addEventListener("click", () => {
   if (roleEl.textContent === "დამალულია") {
     roleEl.textContent = players[index].role;
     nextBtn.disabled = true;
-    prevBtn.disabled = true;   
+    prevBtn.disabled = true; 
   } else {
     roleEl.textContent = "დამალულია";
     nextBtn.disabled = false;
