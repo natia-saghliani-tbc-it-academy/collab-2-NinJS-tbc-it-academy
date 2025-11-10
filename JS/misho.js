@@ -1,13 +1,12 @@
-// const palyersAddElement = document.querySelector('.players-section-add') {
-
-// }
-
 let canStart = false;
 let mafiaPlayers = [];
+const playersStartGameElement = document.querySelector('.players-section-start-game-btn')
 
 function playersAdd() {
-  const playersInputElement = document.querySelector("#players-input");
-  let playerUserName = playersInputElement.value;
+    const playersInputElement = document.querySelector("#players-input");
+    // const players-section-start-game-btn
+
+    let playerUserName = playersInputElement.value;
 
   if (playerUserName) {
     console.log("playerUserName: ", playerUserName);
@@ -34,23 +33,25 @@ function playersAdd() {
 
     playersGameStart();
     // clearInput();
-    console.log(mafiaPlayers);
+    // console.log(mafiaPlayers);
   }
 }
 
 function playersClearAll() {
   mafiaPlayers = [];
   canStart = false;
-  console.log("mafiaPlayers CLEAR: ", mafiaPlayers);
+//   console.log("mafiaPlayers CLEAR: ", mafiaPlayers);
 }
 
 function playersGameStart() {
+    let playersStartGameCl = playersStartGameElement.classList
+    console.log("playersStartGameCl: ", playersStartGameCl)
   if (mafiaPlayers.length > 4 && mafiaPlayers.length < 13) {
     canStart = true;
-    console.log("canStart: ", canStart);
+    playersStartGameCl.add('players-start-button-enabled')
   } else {
     canStart = false;
-    console.log("canStart: ", canStart);
+    playersStartGameCl.remove('players-start-button-enabled')
   }
 }
 
