@@ -23,7 +23,7 @@ function playersAdd() {
 
     let playersNewUser = document.createElement('div')
 
-    playersNewUser =  playersNewUser.innerHTML = `<div> ${playerUserName} </div>`
+    // let playersNewUserHtml =  playersNewUser.innerHTML = `<div> ${playerUserName} </div>`
     let playersNewUsersDisplay = document.querySelector('.players-section-users-display');
 
     // console.log("playersNewUser: ", playersNewUser)
