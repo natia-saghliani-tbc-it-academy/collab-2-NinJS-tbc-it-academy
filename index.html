@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NinJS Project</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
     <main>
+      <section id="players-section">
+        <div class="players-section-input-flex">
+          <h2>Players</h2>
+          <input
+            type="text"
+            name="users-input"
+            id="players-input"
+            placeholder="add player name..."
+          />
+          <button class="players-section-add" onclick="playersAdd()" >Add</button>
+        </div>
+        <button class="players-section-clear" onclick="playersClearAll()">clear</button>
 
+        <div>
+           <h2>Setup</h2>
+           <div class="players-section-setup-flex">
+            <div>Detective: 1</div>
+            <div>Doctor: 1</div>
+            <div>Mafia: 1</div>
+           </div>
+           <button class="players-section-start-game-btn" >Start Game</button>
+        </div>
+      </section>
+  
     </main>
 
     <script src="./JS/ani.js"></script>
@@ -17,5 +40,5 @@
     <script src="./JS/misho.js"></script>
     <script src="./JS/natia.js"></script>
     <script src="./JS/main.js"></script>
-</body>
+  </body>
 </html>
