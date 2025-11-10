@@ -2,6 +2,7 @@
 
 // }
 
+let canStart = false;
 let mafiaPlayers = [];
 
 function playersAdd() {
@@ -20,7 +21,15 @@ function playersAdd() {
       isChosenByDoctor: false,
     });
 
-    // Check If > 5 <13
+    let playersNewUser = document.createElement('div')
+
+    playersNewUser =  playersNewUser.innerHTML = `<div> ${playerUserName} </div>`
+    let playersNewUsersDisplay = document.querySelector('.players-section-users-display');
+
+    // console.log("playersNewUser: ", playersNewUser)
+    playersNewUsersDisplay.appendChild(playersNewUser);
+
+    playersGameStart() 
     // clearInput()
     console.log(mafiaPlayers)
   }
@@ -28,12 +37,21 @@ function playersAdd() {
 
 function playersClearAll()  {
     mafiaPlayers = [];
-
+    canStart = false;
     console.log("mafiaPlayers CLEAR: ", mafiaPlayers)
 }
 
+function playersGameStart() {
+    if(mafiaPlayers.length > 4 && mafiaPlayers.length < 13) {
+        canStart = true;
+        console.log("canStart: ", canStart)
+    } else {
+        canStart = false;
+        console.log("canStart: ", canStart)
+    }
+}
 
-players-section-start-game-btn
+// players-section-start-game-btn
 
 // function clearInput() {
 //     playersInputElement = ""
