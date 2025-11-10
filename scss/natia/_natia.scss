@@ -1,0 +1,12 @@
+.vote-user {
+    display:flex;
+    gap: 20px;
+    justify-content: space-between;
+
+
+    .vote {
+        max-width: 400px;
+        width: 100%;
+        
+    }
+}
