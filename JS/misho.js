@@ -21,44 +21,41 @@ function playersAdd() {
       isChosenByDoctor: false,
     });
 
-    let playersNewUsersDisplay = document.querySelector('.players-section-users-display');
+    let playersNewUsersDisplay = document.querySelector(
+      ".players-section-users-display"
+    );
 
-    const playersNewUser = document.createElement('div')
-     playersNewUser.innerHTML = `
+    const playersNewUser = document.createElement("div");
+    playersNewUser.innerHTML = `
      <div> ${playerUserName} </div>
-     `
-    // playerUserName.appendChild()
-    
+     `;
+
     playersNewUsersDisplay.appendChild(playersNewUser);
 
-    playersGameStart() 
-    // clearInput()
-    console.log(mafiaPlayers)
+    playersGameStart();
+    // clearInput();
+    console.log(mafiaPlayers);
   }
+}
 
-
-function playersClearAll()  {
-    mafiaPlayers = [];
-    canStart = false;
-    console.log("mafiaPlayers CLEAR: ", mafiaPlayers)
+function playersClearAll() {
+  mafiaPlayers = [];
+  canStart = false;
+  console.log("mafiaPlayers CLEAR: ", mafiaPlayers);
 }
 
 function playersGameStart() {
-    if(mafiaPlayers.length > 4 && mafiaPlayers.length < 13) {
-        canStart = true;
-        console.log("canStart: ", canStart)
-    } else {
-        canStart = false;
-        console.log("canStart: ", canStart)
-    }
+  if (mafiaPlayers.length > 4 && mafiaPlayers.length < 13) {
+    canStart = true;
+    console.log("canStart: ", canStart);
+  } else {
+    canStart = false;
+    console.log("canStart: ", canStart);
+  }
 }
 
 
-// players-section-start-game-btn
-
 // function clearInput() {
-//     playersInputElement = ""
+//    //reset input value
+//    // playersInputElement.value = '';
 // }
-
-// getElementById("myText").value = "Johnny Bravo";
-
